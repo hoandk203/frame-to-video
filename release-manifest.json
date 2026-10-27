@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "appVersion": "0.1.0",
+  "target": "win-x64",
+  "status": "unverified",
+  "requiredRoles": ["node", "ffmpeg", "ffprobe"],
+  "selectedLines": { "node": "24", "ffmpeg": "8", "sharp": "0.34", "go": "1.26" },
+  "artifacts": [],
+  "notes": "Windows binaries not downloaded or verified. Packaging must fail until exact versions, source URLs, SHA-256 and license paths are recorded. Local Linux test tools are not release artifacts."
+}

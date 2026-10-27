@@ -1,0 +1,7 @@
+node_modules
+dist
+artifacts
+data
+.local-data
+.local-tools
+launcher

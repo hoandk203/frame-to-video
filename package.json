@@ -1,0 +1,55 @@
+{
+  "name": "frame-to-video-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.7.0",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "tsc -p tsconfig.server.json && vite build --config apps/web/vite.config.ts",
+    "start": "node dist/apps/server/src/main.js",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test --experimental-test-isolation=none tests/*.test.ts",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "setup:media": "node scripts/setup-media.mjs",
+    "package:win": "node scripts/package-win.mjs",
+    "fixtures": "node --import tsx scripts/fixtures.ts",
+    "dev:server": "node --import tsx apps/server/src/main.ts",
+    "dev:web": "vite --config apps/web/vite.config.ts",
+    "verify:core": "node scripts/verify-core.mjs",
+    "test:integration": "node --import tsx --test --experimental-test-isolation=none tests/integration/*.test.mjs"
+  },
+  "dependencies": {
+    "@fastify/multipart": "9.2.1",
+    "@fastify/static": "8.3.0",
+    "@radix-ui/react-dialog": "1.1.15",
+    "@tanstack/react-virtual": "3.13.12",
+    "archiver": "7.0.1",
+    "fastify": "5.6.2",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "sharp": "0.34.5",
+    "zod": "3.25.76",
+    "zustand": "5.0.12"
+  },
+  "devDependencies": {
+    "@types/archiver": "6.0.3",
+    "@types/node": "22.19.17",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@playwright/test": "1.62.1",
+    "eslint": "9.39.4",
+    "typescript-eslint": "8.58.0",
+    "prettier": "3.8.1",
+    "tsx": "4.21.0",
+    "typescript": "5.9.3",
+    "vite": "7.3.2",
+    "tailwindcss": "4.2.2",
+    "@tailwindcss/vite": "4.2.2",
+    "yauzl": "3.2.0"
+  }
+}

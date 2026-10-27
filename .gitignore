@@ -1,0 +1,12 @@
+node_modules/
+.local-tools/
+dist/
+.local-data/
+data/
+.env
+binaries/
+artifacts/
+playwright-report/
+test-results/
+tests/generated-fixtures/
+*.log

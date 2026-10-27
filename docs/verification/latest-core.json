@@ -1,0 +1,25 @@
+{
+  "recordedAt": "2026-10-27T11:51:25.893Z",
+  "platform": "linux",
+  "arch": "x64",
+  "nodeVersion": "v24.11.0",
+  "typescript": "5.9.3",
+  "sharp": "0.34.5",
+  "counts": {
+    "total": 76,
+    "pass": 76,
+    "fail": 0,
+    "skipped": 0
+  },
+  "sourceDigest": "66524076aaef37fea60852fde5a0a1e8bea75f6bdf38c14fde9b6052de84934d",
+  "typecheck": {
+    "exitCode": 0,
+    "method": "Direct terminal strict/noUncheckedIndexedAccess on tests/core graph plus previews/config/launcher-control and frontend API utility; exit 0. Full project typecheck still fails for missing dependencies."
+  },
+  "tests": {
+    "exitCode": 0,
+    "method": "Direct terminal Node test command with explicit local FFMPEG_PATH/FFPROBE_PATH; TAP log retained"
+  },
+  "scope": "Core/services including staged record creation/index reconstruction/atomic temp file-state recovery, metadata schemas/backups, prepared CLI media, cache/Range lifecycle, scoped preview and job-state tests. Real audio checks. Excludes actual process-kill/power-loss/legacy orphan repair, real ZIP generation/extraction/CRC, HTTP/browser integration, full build, Go compilation and Windows portable gates.",
+  "helperScript": "Separate script-core.json records failure because spawnSync is denied by sandbox; not used to claim test success."
+}

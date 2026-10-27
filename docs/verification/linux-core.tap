@@ -1,0 +1,466 @@
+TAP version 13
+# Subtest: ZIP64 envelope verification accepts an independently created fixture and rejects truncation/count/offset corruption
+ok 1 - ZIP64 envelope verification accepts an independently created fixture and rejects truncation/count/offset corruption
+  ---
+  duration_ms: 7.750862
+  type: 'test'
+  ...
+# Subtest: mixed sources become ordered composed PNGs with hashes and a portable batch script
+ok 2 - mixed sources become ordered composed PNGs with hashes and a portable batch script
+  ---
+  duration_ms: 1039.00143
+  type: 'test'
+  ...
+# Subtest: cancel and quota failures remove owned staging and release their reservations
+ok 3 - cancel and quota failures remove owned staging and release their reservations
+  ---
+  duration_ms: 621.139062
+  type: 'test'
+  ...
+# Subtest: a reused package directory is never merged or deleted by a new attempt
+ok 4 - a reused package directory is never merged or deleted by a new attempt
+  ---
+  duration_ms: 102.378479
+  type: 'test'
+  ...
+# Subtest: relocated prepared files encode independently after all original managed images are removed
+ok 5 - relocated prepared files encode independently after all original managed images are removed
+  ---
+  duration_ms: 919.599033
+  type: 'test'
+  ...
+# Subtest: copied audio and prepared frame sequence preserve pad/loop duration when encoded elsewhere
+ok 6 - copied audio and prepared frame sequence preserve pad/loop duration when encoded elsewhere
+  ---
+  duration_ms: 3349.214799
+  type: 'test'
+  ...
+# Subtest: natural ordering is deterministic, handles long numbers and leading zeros
+ok 7 - natural ordering is deterministic, handles long numbers and leading zeros
+  ---
+  duration_ms: 0.371189
+  type: 'test'
+  ...
+# Subtest: strict input validates all supported output shapes and rejects traversal/audio append
+ok 8 - strict input validates all supported output shapes and rejects traversal/audio append
+  ---
+  duration_ms: 0.859421
+  type: 'test'
+  ...
+# Subtest: workspace serializes concurrent revisions and recovers last-good project without erasing backup
+ok 9 - workspace serializes concurrent revisions and recovers last-good project without erasing backup
+  ---
+  duration_ms: 15.249076
+  type: 'test'
+  ...
+# Subtest: renderer preserves foreground geometry, flattens alpha and matches PNG/raw frame
+ok 10 - renderer preserves foreground geometry, flattens alpha and matches PNG/raw frame
+  ---
+  duration_ms: 53.260529
+  type: 'test'
+  ...
+# Subtest: engine missing reports engine error rather than guessed memory exhaustion
+ok 11 - engine missing reports engine error rather than guessed memory exhaustion
+  ---
+  duration_ms: 8.934001
+  type: 'test'
+  ...
+# Subtest: EXIF rotation precedes contain geometry and transparent input uses matte
+ok 12 - EXIF rotation precedes contain geometry and transparent input uses matte
+  ---
+  duration_ms: 130.219493
+  type: 'test'
+  ...
+# Subtest: real RGBA pipe encodes N frames; pad/loop keep complete video and audio
+ok 13 - real RGBA pipe encodes N frames; pad/loop keep complete video and audio
+  ---
+  duration_ms: 783.224628
+  type: 'test'
+  ...
+# Subtest: record publication exposes a complete UUID directory and fails without merging or deleting existing state
+ok 14 - record publication exposes a complete UUID directory and fails without merging or deleting existing state
+  ---
+  duration_ms: 10.248872
+  type: 'test'
+  ...
+# Subtest: preflight cleans only unpublished metadata stages and refuses indexed or unknown contents before deleting anything
+ok 15 - preflight cleans only unpublished metadata stages and refuses indexed or unknown contents before deleting anything
+  ---
+  duration_ms: 5.81631
+  type: 'test'
+  ...
+# Subtest: project startup discards initial metadata staging without creating an empty visible project
+ok 16 - project startup discards initial metadata staging without creating an empty visible project
+  ---
+  duration_ms: 9.209082
+  type: 'test'
+  ...
+# Subtest: published import recovers a missing idempotency index and retains the same session for retries
+ok 17 - published import recovers a missing idempotency index and retains the same session for retries
+  ---
+  duration_ms: 15.633578
+  type: 'test'
+  ...
+# Subtest: published but unindexed export restores identity as interrupted and never starts the engine on retry
+ok 18 - published but unindexed export restores identity as interrupted and never starts the engine on retry
+  ---
+  duration_ms: 40.910358
+  type: 'test'
+  ...
+# Subtest: creation/index conflict preserves pending metadata and sources instead of guessing a new idempotency binding
+ok 19 - creation/index conflict preserves pending metadata and sources instead of guessing a new idempotency binding
+  ---
+  duration_ms: 37.195074
+  type: 'test'
+  ...
+# Subtest: project deletion tombstone prevents creation intents from restoring removed export index entries
+ok 20 - project deletion tombstone prevents creation intents from restoring removed export index entries
+  ---
+  duration_ms: 43.117225
+  type: 'test'
+  ...
+# Subtest: startup removes abandoned atomic updates only after the corresponding durable records validate
+ok 21 - startup removes abandoned atomic updates only after the corresponding durable records validate
+  ---
+  duration_ms: 33.758485
+  type: 'test'
+  ...
+# Subtest: unreadable durable record keeps its atomic temporary files and source data for recovery
+ok 22 - unreadable durable record keeps its atomic temporary files and source data for recovery
+  ---
+  duration_ms: 36.288629
+  type: 'test'
+  ...
+# Subtest: optional registry without a durable primary retains atomic candidates instead of discarding the only recovery bytes
+ok 23 - optional registry without a durable primary retains atomic candidates instead of discarding the only recovery bytes
+  ---
+  duration_ms: 34.353381
+  type: 'test'
+  ...
+# Subtest: diagnostics bounds entry size, total bytes and file count under concurrent error writes
+ok 24 - diagnostics bounds entry size, total bytes and file count under concurrent error writes
+  ---
+  duration_ms: 14.168682
+  type: 'test'
+  ...
+# Subtest: rotation expires owned logs but leaves unrelated files untouched
+ok 25 - rotation expires owned logs but leaves unrelated files untouched
+  ---
+  duration_ms: 2.789389
+  type: 'test'
+  ...
+# Subtest: late poll or old-project responses cannot roll back newer SSE state or current export
+ok 26 - late poll or old-project responses cannot roll back newer SSE state or current export
+  ---
+  duration_ms: 0.224056
+  type: 'test'
+  ...
+# Subtest: semantic import corruption recovers the last valid backup and preserves accepted sources
+ok 27 - semantic import corruption recovers the last valid backup and preserves accepted sources
+  ---
+  duration_ms: 36.02123
+  type: 'test'
+  ...
+# Subtest: unrecoverable manifest corruption fails closed without deleting its directory, partial bytes or accepted media
+ok 28 - unrecoverable manifest corruption fails closed without deleting its directory, partial bytes or accepted media
+  ---
+  duration_ms: 28.479027
+  type: 'test'
+  ...
+# Subtest: missing primary with an invalid backup is corruption, not an empty registry or a nonexistent project
+ok 29 - missing primary with an invalid backup is corruption, not an empty registry or a nonexistent project
+  ---
+  duration_ms: 25.26911
+  type: 'test'
+  ...
+# Subtest: folder identity validation runs inside recovery for both projects and import sessions
+ok 30 - folder identity validation runs inside recovery for both projects and import sessions
+  ---
+  duration_ms: 31.05532
+  type: 'test'
+  ...
+# Subtest: schemas reject duplicate IDs, traversal, malformed accepted bytes and inconsistent completed job metadata
+ok 31 - schemas reject duplicate IDs, traversal, malformed accepted bytes and inconsistent completed job metadata
+  ---
+  duration_ms: 30.495747
+  type: 'test'
+  ...
+# Subtest: job recovery validates snapshot before interrupting or deleting partial output and cannot redirect cleanup by job ID
+ok 32 - job recovery validates snapshot before interrupting or deleting partial output and cannot redirect cleanup by job ID
+  ---
+  duration_ms: 47.856051
+  type: 'test'
+  ...
+# Subtest: dangling operation indexes stop startup before import partial cleanup or job mutation
+ok 33 - dangling operation indexes stop startup before import partial cleanup or job mutation
+  ---
+  duration_ms: 28.469452
+  type: 'test'
+  ...
+# Subtest: project commit marker repairs an older incomplete upload checkpoint without invalidating the next restart
+ok 34 - project commit marker repairs an older incomplete upload checkpoint without invalidating the next restart
+  ---
+  duration_ms: 31.642808
+  type: 'test'
+  ...
+# Subtest: single byte ranges reject unsafe/multiple ranges and handle suffixes, clamping and empty media
+ok 35 - single byte ranges reject unsafe/multiple ranges and handle suffixes, clamping and empty media
+  ---
+  duration_ms: 0.517589
+  type: 'test'
+  ...
+# Subtest: memory and file responses share exact byte ranges and leases end only after file source closes
+ok 36 - memory and file responses share exact byte ranges and leases end only after file source closes
+  ---
+  duration_ms: 2.959457
+  type: 'test'
+  ...
+# Subtest: invalid ranges and failed stat release their lease without opening a stream
+ok 37 - invalid ranges and failed stat release their lease without opening a stream
+  ---
+  duration_ms: 0.469881
+  type: 'test'
+  ...
+# Subtest: cache enforces disk/memory LRU, preserves active readers and clears only owned media
+ok 38 - cache enforces disk/memory LRU, preserves active readers and clears only owned media
+  ---
+  duration_ms: 9.209472
+  type: 'test'
+  ...
+# Subtest: memory-only, disk-only and disabled cache budgets behave explicitly without exceeding either tier
+ok 39 - memory-only, disk-only and disabled cache budgets behave explicitly without exceeding either tier
+  ---
+  duration_ms: 18.192014
+  type: 'test'
+  ...
+# Subtest: publication cannot evict leased media and competing producers retain bounded storage
+ok 40 - publication cannot evict leased media and competing producers retain bounded storage
+  ---
+  duration_ms: 12.953791
+  type: 'test'
+  ...
+# Subtest: quota, canceled, oversized and invalidated generations release reservations and owned temporary files
+ok 41 - quota, canceled, oversized and invalidated generations release reservations and owned temporary files
+  ---
+  duration_ms: 4.868956
+  type: 'test'
+  ...
+# Subtest: restart removes only owned staging, applies limits, warms memory and detects missing cache files
+ok 42 - restart removes only owned staging, applies limits, warms memory and detects missing cache files
+  ---
+  duration_ms: 7.882869
+  type: 'test'
+  ...
+# Subtest: latest sequence cancels same-tab seek/prefetch, isolates tabs/projects and rejects reordered requests
+ok 43 - latest sequence cancels same-tab seek/prefetch, isolates tabs/projects and rejects reordered requests
+  ---
+  duration_ms: 0.724643
+  type: 'test'
+  ...
+# Subtest: selection tombstones are bounded, retain active leases across TTL and drain on shutdown
+ok 44 - selection tombstones are bounded, retain active leases across TTL and drain on shutdown
+  ---
+  duration_ms: 0.276946
+  type: 'test'
+  ...
+# Subtest: canceling a selection removes queued speculative work before resuming exports and prioritizes seek
+ok 45 - canceling a selection removes queued speculative work before resuming exports and prioritizes seek
+  ---
+  duration_ms: 0.665854
+  type: 'test'
+  ...
+# Subtest: shared preview contracts validate paired client/sequence, bounds and prohibit full-resolution prefetch
+ok 46 - shared preview contracts validate paired client/sequence, bounds and prohibit full-resolution prefetch
+  ---
+  duration_ms: 0.510248
+  type: 'test'
+  ...
+# Subtest: preview shares the native scheduler, coalesces pending work and bounds outstanding requests
+ok 47 - preview shares the native scheduler, coalesces pending work and bounds outstanding requests
+  ---
+  duration_ms: 218.313759
+  type: 'test'
+  ...
+# Subtest: real audio previews preserve duration, pad/loop and apply volume once before bounded cache publication
+ok 48 - real audio previews preserve duration, pad/loop and apply volume once before bounded cache publication
+  ---
+  duration_ms: 525.416291
+  type: 'test'
+  ...
+# Subtest: service rejects a metadata-delayed old seek, keeps other tabs independent and cancels queued groups
+ok 49 - service rejects a metadata-delayed old seek, keeps other tabs independent and cancels queued groups
+  ---
+  duration_ms: 87.044457
+  type: 'test'
+  ...
+# Subtest: new seek reclaims a full speculative group before admission instead of failing at the old queue limit
+ok 50 - new seek reclaims a full speculative group before admission instead of failing at the old queue limit
+  ---
+  duration_ms: 1110.156578
+  type: 'test'
+  ...
+# Subtest: config import resolves by verified content, creates a new project and ignores source IDs from another workspace
+ok 51 - config import resolves by verified content, creates a new project and ignores source IDs from another workspace
+  ---
+  duration_ms: 65.188579
+  type: 'test'
+  ...
+# Subtest: relink accepts matching image content, retains frame order/settings and rejects wrong content
+ok 52 - relink accepts matching image content, retains frame order/settings and rejects wrong content
+  ---
+  duration_ms: 128.379457
+  type: 'test'
+  ...
+# Subtest: garbage collection retains shared projects, last-good backup and active leases; deleting final reference removes copies only
+ok 53 - garbage collection retains shared projects, last-good backup and active leases; deleting final reference removes copies only
+  ---
+  duration_ms: 80.947491
+  type: 'test'
+  ...
+# Subtest: audio configuration survives transport and content relink preserves volume and loop policy
+ok 54 - audio configuration survives transport and content relink preserves volume and loop policy
+  ---
+  duration_ms: 254.429361
+  type: 'test'
+  ...
+# Subtest: project deletion protects result readers and removes finished job history and output together
+ok 55 - project deletion protects result readers and removes finished job history and output together
+  ---
+  duration_ms: 293.231428
+  type: 'test'
+  ...
+# Subtest: quota information remains readable when writes are blocked
+ok 56 - quota information remains readable when writes are blocked
+  ---
+  duration_ms: 3.974302
+  type: 'test'
+  ...
+# Subtest: project deletion refuses revision conflict/open import and corrupted metadata cannot authorize GC
+ok 57 - project deletion refuses revision conflict/open import and corrupted metadata cannot authorize GC
+  ---
+  duration_ms: 28.115627
+  type: 'test'
+  ...
+# Subtest: source integrity verification rejects same-size external edits
+ok 58 - source integrity verification rejects same-size external edits
+  ---
+  duration_ms: 29.0853
+  type: 'test'
+  ...
+# Subtest: opening a project detects missing or edited managed sources and keeps settings for relink
+ok 59 - opening a project detects missing or edited managed sources and keeps settings for relink
+  ---
+  duration_ms: 35.678735
+  type: 'test'
+  ...
+# Subtest: one native worker, bounded pending queue and running cancellation settles only after work releases resources
+ok 60 - one native worker, bounded pending queue and running cancellation settles only after work releases resources
+  ---
+  duration_ms: 1.092309
+  type: 'test'
+  ...
+# Subtest: export work preempts queued preview capacity and preview resumes only after the job lease releases
+ok 61 - export work preempts queued preview capacity and preview resumes only after the job lease releases
+  ---
+  duration_ms: 0.362206
+  type: 'test'
+  ...
+# Subtest: seek replacement is scoped to the same client and shutdown rejects queued tasks
+ok 62 - seek replacement is scoped to the same client and shutdown rejects queued tasks
+  ---
+  duration_ms: 0.316638
+  type: 'test'
+  ...
+# Subtest: queue capacity rejects invalid configuration
+ok 63 - queue capacity rejects invalid configuration
+  ---
+  duration_ms: 0.161454
+  type: 'test'
+  ...
+# Subtest: session is same-origin, CSRF protected, stable across tabs and invalid after restart
+ok 64 - session is same-origin, CSRF protected, stable across tabs and invalid after restart
+  ---
+  duration_ms: 1.448776
+  type: 'test'
+  ...
+# Subtest: mixed image import commits in natural order and conflicting retry preserves accepted source
+ok 65 - mixed image import commits in natural order and conflicting retry preserves accepted source
+  ---
+  duration_ms: 55.147351
+  type: 'test'
+  ...
+# Subtest: invalid/short uploads cannot publish project; cancel preserves previous project
+ok 66 - invalid/short uploads cannot publish project; cancel preserves previous project
+  ---
+  duration_ms: 12.223443
+  type: 'test'
+  ...
+# Subtest: reservation rejects over-quota manifests without creating an import session
+ok 67 - reservation rejects over-quota manifests without creating an import session
+  ---
+  duration_ms: 5.529186
+  type: 'test'
+  ...
+# Subtest: job snapshot locks project, idempotent retry returns one real verified output across restart
+ok 68 - job snapshot locks project, idempotent retry returns one real verified output across restart
+  ---
+  duration_ms: 287.229752
+  type: 'test'
+  ...
+# Subtest: cancel waits for an active upload to close and release quota before returning
+ok 69 - cancel waits for an active upload to close and release quota before returning
+  ---
+  duration_ms: 30.914442
+  type: 'test'
+  ...
+# Subtest: failed file open releases the upload slot so a corrected retry can finish
+ok 70 - failed file open releases the upload slot so a corrected retry can finish
+  ---
+  duration_ms: 29.496065
+  type: 'test'
+  ...
+# Subtest: TTL expires abandoned imports, frees their reservation and collects unpublished sources
+ok 71 - TTL expires abandoned imports, frees their reservation and collects unpublished sources
+  ---
+  duration_ms: 26.51045
+  type: 'test'
+  ...
+# Subtest: import creation is persisted and idempotent across retries and service restart
+ok 72 - import creation is persisted and idempotent across retries and service restart
+  ---
+  duration_ms: 28.661909
+  type: 'test'
+  ...
+# Subtest: restart repairs finalize metadata when the project commit succeeded before the response
+ok 73 - restart repairs finalize metadata when the project commit succeeded before the response
+  ---
+  duration_ms: 29.847349
+  type: 'test'
+  ...
+# Subtest: cancel serializes with progress and commit, cleans temporary output and allows a subsequent real export
+ok 74 - cancel serializes with progress and commit, cleans temporary output and allows a subsequent real export
+  ---
+  duration_ms: 1400.872606
+  type: 'test'
+  ...
+# Subtest: invalid JSON cannot damage the current file or leave temporary files
+ok 75 - invalid JSON cannot damage the current file or leave temporary files
+  ---
+  duration_ms: 2.190465
+  type: 'test'
+  ...
+# Subtest: workspace initialization failure releases its owned lock and permits corrected restart
+ok 76 - workspace initialization failure releases its owned lock and permits corrected restart
+  ---
+  duration_ms: 2.210726
+  type: 'test'
+  ...
+1..76
+# tests 76
+# suites 0
+# pass 76
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 12961.346017

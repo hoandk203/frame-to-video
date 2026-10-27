@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "port": 3000,
+  "dataDir": "data",
+  "limits": {
+    "maxFrames": 20000,
+    "maxImagePixels": 100000000,
+    "maxFileBytes": 536870912,
+    "maxImportBytes": 21474836480,
+    "workspaceQuotaBytes": 53687091200,
+    "minFreeDiskBytes": 2147483648,
+    "uploadConcurrency": 2,
+    "uploadTtlHours": 24,
+    "renderWorkers": 1,
+    "previewMemoryBytes": 134217728,
+    "previewDiskBytes": 1073741824
+  }
+}

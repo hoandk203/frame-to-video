@@ -1,0 +1,48 @@
+name: Source and Windows artifact validation
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  windows-build:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.7.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.26.x'
+          cache-dependency-path: launcher/go.sum
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm typecheck
+      - run: pnpm lint
+      - run: pnpm test
+      - run: pnpm build
+      - name: Verify pinned native artifact inputs
+        run: pnpm setup:media
+      - name: Test real media pipeline using release engine
+        shell: pwsh
+        run: |
+          $env:FFMPEG_PATH = Join-Path $PWD 'media/ffmpeg.exe'
+          $env:FFPROBE_PATH = Join-Path $PWD 'media/ffprobe.exe'
+          pnpm test
+          pnpm test:integration
+      - name: Compile and test launcher
+        working-directory: launcher
+        run: go test ./...
+      - run: pnpm package:win
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows-artifact-unverified-on-client-os
+          path: |
+            artifacts/*.zip
+            artifacts/*.sha256
+      # Server 2022 runner is not evidence for Windows 10/11 clean-machine release gates.

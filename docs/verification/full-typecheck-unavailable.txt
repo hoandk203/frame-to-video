@@ -1,0 +1,73 @@
+apps/server/src/app.ts(3,21): error TS2307: Cannot find module 'fastify' or its corresponding type declarations.
+apps/server/src/app.ts(4,23): error TS2307: Cannot find module '@fastify/multipart' or its corresponding type declarations.
+apps/server/src/app.ts(5,25): error TS2307: Cannot find module '@fastify/static' or its corresponding type declarations.
+apps/server/src/app.ts(69,37): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(69,42): error TS7006: Parameter 'reply' implicitly has an 'any' type.
+apps/server/src/app.ts(84,32): error TS7006: Parameter 'error' implicitly has an 'any' type.
+apps/server/src/app.ts(84,39): error TS7006: Parameter '_req' implicitly has an 'any' type.
+apps/server/src/app.ts(84,45): error TS7006: Parameter 'reply' implicitly has an 'any' type.
+apps/server/src/app.ts(99,36): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(99,41): error TS7006: Parameter 'reply' implicitly has an 'any' type.
+apps/server/src/app.ts(115,38): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(115,43): error TS7006: Parameter 'reply' implicitly has an 'any' type.
+apps/server/src/app.ts(122,83): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(125,85): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(181,14): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(181,19): error TS7006: Parameter 'reply' implicitly has an 'any' type.
+apps/server/src/app.ts(186,52): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(186,57): error TS7006: Parameter 'reply' implicitly has an 'any' type.
+apps/server/src/app.ts(191,14): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(191,19): error TS7006: Parameter 'reply' implicitly has an 'any' type.
+apps/server/src/app.ts(203,88): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(208,14): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(208,19): error TS7006: Parameter 'reply' implicitly has an 'any' type.
+apps/server/src/app.ts(217,91): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(221,80): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(226,14): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(238,14): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(240,83): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(240,88): error TS7006: Parameter 'reply' implicitly has an 'any' type.
+apps/server/src/app.ts(244,90): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(253,14): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(253,19): error TS7006: Parameter 'reply' implicitly has an 'any' type.
+apps/server/src/app.ts(270,14): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(270,19): error TS7006: Parameter 'reply' implicitly has an 'any' type.
+apps/server/src/app.ts(277,90): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(280,83): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(280,88): error TS7006: Parameter 'reply' implicitly has an 'any' type.
+apps/server/src/app.ts(292,14): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(292,19): error TS7006: Parameter 'reply' implicitly has an 'any' type.
+apps/server/src/app.ts(305,14): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(305,19): error TS7006: Parameter 'reply' implicitly has an 'any' type.
+apps/server/src/app.ts(320,14): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(320,19): error TS7006: Parameter 'reply' implicitly has an 'any' type.
+apps/server/src/app.ts(329,14): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(333,14): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(333,19): error TS7006: Parameter 'reply' implicitly has an 'any' type.
+apps/server/src/app.ts(346,14): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(346,19): error TS7006: Parameter 'reply' implicitly has an 'any' type.
+apps/server/src/app.ts(360,14): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(364,14): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(364,19): error TS7006: Parameter 'reply' implicitly has an 'any' type.
+apps/server/src/app.ts(384,71): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(387,79): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(390,78): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(390,83): error TS7006: Parameter 'reply' implicitly has an 'any' type.
+apps/server/src/app.ts(413,83): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(413,88): error TS7006: Parameter 'reply' implicitly has an 'any' type.
+apps/server/src/app.ts(424,81): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(424,86): error TS7006: Parameter 'reply' implicitly has an 'any' type.
+apps/server/src/app.ts(435,42): error TS7006: Parameter 'req' implicitly has an 'any' type.
+apps/server/src/app.ts(435,47): error TS7006: Parameter 'reply' implicitly has an 'any' type.
+apps/server/src/app.ts(471,27): error TS7006: Parameter '_req' implicitly has an 'any' type.
+apps/server/src/app.ts(471,33): error TS7006: Parameter 'reply' implicitly has an 'any' type.
+apps/server/src/app.ts(490,17): error TS2307: Cannot find module 'fastify' or its corresponding type declarations.
+apps/web/src/features/export/CliExportButton.tsx(2,25): error TS2307: Cannot find module '@radix-ui/react-dialog' or its corresponding type declarations.
+apps/web/src/features/export/CliExportButton.tsx(10,50): error TS7006: Parameter 'next' implicitly has an 'any' type.
+apps/web/src/features/projects/ProjectTools.tsx(2,25): error TS2307: Cannot find module '@radix-ui/react-dialog' or its corresponding type declarations.
+apps/web/src/features/projects/ProjectTools.tsx(71,24): error TS7006: Parameter 'open' implicitly has an 'any' type.
+apps/web/src/main.tsx(3,32): error TS2307: Cannot find module '@tanstack/react-virtual' or its corresponding type declarations.
+apps/web/src/main.tsx(4,25): error TS2307: Cannot find module '@radix-ui/react-dialog' or its corresponding type declarations.
+apps/web/src/main.tsx(1323,24): error TS7006: Parameter 'open' implicitly has an 'any' type.
+apps/web/src/main.tsx(1431,41): error TS7006: Parameter 'row' implicitly has an 'any' type.
+apps/web/vite.config.ts(3,25): error TS2307: Cannot find module '@tailwindcss/vite' or its corresponding type declarations.
